@@ -1,1 +1,73 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>表单作业</title>
+	<meta charset="UTF-8">
+</head>
+<style>
+*{
+padding: 0;
+margin: 0;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.ge{
+    width: 260px;
+    height: 25px;
+    left: 10px;
+    margin: auto;
+    margin: 0 auto;
+}
+.kuang{
+    padding-left: 20px;
+}
+.ke{
+    width: 260px;
+    height: 25px;
+    left: 10px;
+    margin: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.dang{
+    color:red;
+}
+</style>
+<body>
+    <div class="box">
+        <h1>学生信息</h1>
+        <fieldset class="kuang">
+            <legend class="dang">学生档案</legend>
+            <form id="testform" method="get" action="#S">	
+                姓名： <br/>
+                <input class="ge" text" name="name1" required placeholder="请输入姓名"/><br/>
+                学号：<br/>
+                <input class="ge" type="number" name="num1" placeholder="请输入学号" required/><br/>
+                手机号码：<br/>
+                <input class="ge" type="number" name="shou" placeholder="请输入手机号" required/><br/>
+                邮箱地址：<br/>
+                <input class="ge" type="email" name="email" placeholder="请输入邮箱地址" required/><br/>
+                录取学校：<br/>
+                <input class="ge" type="search" name="school" list="list"/><br/>
+                <datalist id="list">
+                    <option>河北师范大学</option>
+                    <option>北京师范大学</option>
+                    <option>北京科技大学</option>
+                    <option>北京大学</option>
+                    <option>清华大学</option>
+                </datalist>
+                入学成绩：<br/>
+                <input class="ge" type="number" name="mark"/><br/>
+                入学时间：<br/>
+                <input class="ge" type="date"/><br/>
+                <input class="ke" type="submit" value="提交"/>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
